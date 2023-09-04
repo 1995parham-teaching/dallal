@@ -1,5 +1,5 @@
 \ProvidesClass{assignment}
-              [Example theme for AUT assignments]
+              [1995parham Assignment Template]
 
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{booktabs}
@@ -42,23 +42,17 @@
 
 
 \renewcommand{\maketitle}{%
-  \begin{minipage}{.25\textwidth}
-    \centering\includegraphics[width=.5\textwidth]{../img/aut.png}
-  \end{minipage}
+  \begin{center}
   \begin{minipage}{.5\textwidth}
   \begin{center}
   \textit{بسمه تعالی}\\
-  {دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر (پلی‌تکنیک تهران)}
-  \\
   {درس \course@name \space \course@semester}
   \\
   {\@title}
   \\
   \end{center}
   \end{minipage}
-  \begin{minipage}{.25\textwidth}
-    \centering\includegraphics[width=.5\textwidth]{../img/ce.png}
-  \end{minipage}
+  \end{center}
 }
 
 \newcommand{\makefooter}{%
