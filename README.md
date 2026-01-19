@@ -6,7 +6,7 @@
 
 A Message Broker is a server that distributes messages received from clients among them. The two main operations are **Publish** and **Subscribe**. In a Subscribe operation, a client requests to listen to a specific topic. In a Publish operation, a client publishes a message on a specific topic. The broker then delivers the messages to **all** subscribers listening on that topic.
 
-![Message Broker Overview](assets/def-1/img/overview.png)
+![Message Broker Overview](assets/overview.png)
 
 ## Part 1: TCP Implementation
 
