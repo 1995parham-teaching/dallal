@@ -1,0 +1,12 @@
+[project]
+name = "dallal"
+version = "0.1.0"
+description = "How to write a message broker in Python, TCP"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.13",
+]
