@@ -59,7 +59,7 @@ class MessageBroker:
                             self.process_message(conn, message)
                         except json.JSONDecodeError:
                             print(f"Invalid JSON from {addr}: {line}")
-        except (ConnectionResetError, BrokenPipeError):
+        except ConnectionResetError, BrokenPipeError:
             pass
         finally:
             print(f"Client {addr} disconnected")
@@ -108,7 +108,7 @@ class MessageBroker:
         try:
             data = json.dumps(message) + "\n"
             conn.sendall(data.encode("utf-8"))
-        except (ConnectionResetError, BrokenPipeError, OSError):
+        except ConnectionResetError, BrokenPipeError, OSError:
             self.remove_client(conn)
 
     def remove_client(self, conn: socket.socket) -> None:
